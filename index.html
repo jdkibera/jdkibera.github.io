@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>kibera.com</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #FAF8F5;
+    --ink: #2D2D2D;
+    --muted: #6B6B6B;
+    --rule: #E5E0DA;
+    --copper: #8C4A2C;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    background: var(--cream);
+    color: var(--ink);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 24px;
+  }
+  main {
+    max-width: 520px;
+    width: 100%;
+    text-align: center;
+  }
+  h1 {
+    font-family: 'IM Fell English SC', 'Cormorant Garamond', Georgia, serif;
+    font-weight: 400;
+    font-size: clamp(2.4rem, 6vw, 3.6rem);
+    margin: 0 0 8px;
+    letter-spacing: 0.02em;
+  }
+  .tag {
+    color: var(--muted);
+    font-style: italic;
+    font-size: 1.05rem;
+    margin: 0 0 40px;
+  }
+  hr {
+    border: 0;
+    border-top: 1px solid var(--rule);
+    margin: 32px auto;
+    width: 60px;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  a {
+    color: var(--copper);
+    text-decoration: none;
+    font-size: 1.3rem;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.15s;
+  }
+  a:hover { border-bottom-color: var(--copper); }
+  .desc {
+    display: block;
+    color: var(--muted);
+    font-size: 0.95rem;
+    font-style: italic;
+    margin-top: 2px;
+  }
+  footer {
+    margin-top: 60px;
+    color: var(--muted);
+    font-size: 0.85rem;
+    font-style: italic;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Kibera</h1>
+  <p class="tag">A small corner of the web.</p>
+  <hr>
+  <ul>
+    <li>
+      <a href="/mapgame/">Tallulah the Explorer</a>
+      <span class="desc">A map game for kids and grown-ups.</span>
+    </li>
+  </ul>
+  <footer>jonathan@kibera.com</footer>
+</main>
+</body>
+</html>
