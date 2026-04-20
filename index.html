@@ -21,11 +21,12 @@
     background-attachment: fixed;
     color: var(--text);
     min-height: 100vh;
+    min-height: 100dvh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 80px 24px 32px;
+    padding: clamp(48px, 10vh, 96px) clamp(40px, 12vw, 48px) clamp(24px, 4vh, 32px);
     font-size: 15px;
     line-height: 1.9;
   }
