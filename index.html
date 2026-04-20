@@ -6,17 +6,19 @@
 <title>kibera.com</title>
 <style>
   :root {
-    --bg: #A7B4C2;
+    --bg-top: #A7B4C2;
+    --bg-bottom: #7F8B9A;
     --text: #5F6D7C;
     --link: #8593A2;
     --link-hover: #C8D1DB;
-    --footer: #96A2B0;
+    --footer: #9CA8B5;
   }
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; }
   body {
     font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
-    background: var(--bg);
+    background: linear-gradient(to bottom, var(--bg-top) 0%, var(--bg-top) 40%, var(--bg-bottom) 100%);
+    background-attachment: fixed;
     color: var(--text);
     min-height: 100vh;
     display: flex;
